@@ -29,7 +29,11 @@ public class MultiTargetArffLoaderTest {
 	private static double EPS=0.00000001;
 	private static Instances instancesRegression;
 	private static Instances instancesClassification;
-	
+
+
+
+
+
 	@BeforeClass
 	public static void setUpBeforeClassRegression() throws Exception {
 		try {
