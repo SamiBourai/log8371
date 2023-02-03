@@ -29,7 +29,9 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-
+  <properties>
+    <maven.version>3.6.3</maven.version>
+  </properties>
   <developers>
     <developer>
       <id>abifet</id>
