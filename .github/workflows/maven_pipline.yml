@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: MOA Maven
 
 on:
   push:
@@ -26,11 +26,20 @@ jobs:
          with:
             java-version: 11
 
-       - name: run test without build
+       - name: Run Maven Clean
+         run: mvn clean
+
+       - name: Run Maven Compile
+         run: mvn compile
+
+       - name: Run Maven Test
          run: mvn test
 
-#       - name: Build with Maven
-#         run: mvn clean install -DskipTests
+       - name: Run Maven Package
+         run: mvn package
+
+       - name: Run Maven Install
+         run: mvn install
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
        - name: Update dependency graph
