@@ -4,7 +4,6 @@
     "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
 <module name="Checker">
-  <module name="TreeWalker">
     <module name="JavadocVariable"/>
     <module name="VisibilityModifier"/>
     <module name="MemberName"/>
@@ -29,5 +28,4 @@
       <property name="braceAdjustment" value="0"/>
       <property name="caseIndent" value="2"/>
     </module>
-  </module>
 </module>
