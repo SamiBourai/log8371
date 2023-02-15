@@ -8,12 +8,10 @@
     <module name="JavadocType">
       <property name="allowMissingParamTags" value="false"/>
       <property name="allowMissingReturnTag" value="false"/>
-      <property name="allowThrowsTagsForSubclasses" value="true"/>
     </module>
     <module name="JavadocMethod">
       <property name="allowMissingParamTags" value="false"/>
       <property name="allowMissingReturnTag" value="false"/>
-      <property name="allowThrowsTagsForSubclasses" value="true"/>
     </module>
     <module name="JavadocVariable"/>
     <module name="VisibilityModifier"/>
