@@ -29,8 +29,11 @@ jobs:
         wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.43/checkstyle-8.43-all.jar
         chmod +x checkstyle-8.43-all.jar
     - name: Run Checkstyle
-      run: |
-        java -jar checkstyle-8.43-all.jar -c checkstyle.xml /
+      uses: jxrises/checkstyle-action@v1.2.2
+      with:
+        config_path: checkstyle.xml
+        working_directory: ./
+        checkstyle_version: '8.42'
         
   build:
     runs-on: ubuntu-latest
