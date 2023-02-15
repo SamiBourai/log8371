@@ -30,7 +30,7 @@ jobs:
         chmod +x checkstyle-8.43-all.jar
     - name: Run Checkstyle
       run: |
-        java -jar checkstyle-8.43-all.jar -c checkstyle.xml ./
+        java -jar checkstyle-8.43-all.jar -c checkstyle.xml moa/src/
         
   build:
     runs-on: ubuntu-latest
