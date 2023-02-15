@@ -33,7 +33,7 @@ jobs:
       uses: jxrises/checkstyle-action@v1.2.2
       with:
         config_path: checkstyle.xml
-        working_directory: ./
+        working_directory: ../../
         checkstyle_version: '8.42'
         
   build:
